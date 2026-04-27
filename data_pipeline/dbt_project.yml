@@ -30,7 +30,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
 models:
-  dbt_pipleline: # Ensure this matches your project name
+  data_pipleline: # Ensure this matches your project name
     staging:
       +materialized: view
       +snowflake_warehouse: dbt_wh
