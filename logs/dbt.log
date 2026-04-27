@@ -29,7 +29,7 @@
 [0m21:23:48.536425 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\radha\\.dbt', 'invocation_command': 'dbt init', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
 [0m21:24:37.769379 [debug] [MainThread]: Starter project path: C:\Dhamo\CodeBen\dbt-snf\dbt-venv\Lib\site-packages\dbt\include\starter_project
 [0m21:24:37.882991 [info ] [MainThread]: 
-Your new dbt project "dbt_pipeline" was created!
+Your new dbt project "data_pipeline" was created!
 
 For more information on how to configure the profiles.yml file,
 please consult the dbt documentation here:
@@ -48,7 +48,7 @@ Happy modeling!
 [0m21:24:46.567753 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
 [0m21:24:46.568469 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
 [0m21:24:46.569011 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
-[0m21:26:06.167429 [info ] [MainThread]: Profile dbt_pipeline written to C:\Users\radha\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m21:26:06.167429 [info ] [MainThread]: Profile data_pipeline written to C:\Users\radha\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
 [0m21:26:06.170266 [debug] [MainThread]: Command `dbt init` succeeded at 21:26:06.169821 after 138.22 seconds
 [0m21:26:06.171332 [debug] [MainThread]: Flushing usage events
 [0m21:26:24.354727 [debug] [MainThread]: Got an exception trying to initialize tracking
@@ -375,3 +375,8 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m21:34:51.716022 [debug] [MainThread]: Connection 'debug' was left open.
 [0m21:34:51.716802 [debug] [MainThread]: On debug: Close
 [0m21:34:51.870425 [debug] [MainThread]: Flushing usage events
+{"data":{"log_version":3,"version":"=2.0.0-preview.173"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019dcd54-a092-7da3-be09-d011fc238cee","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.173","name":"MainReportVersion","pid":31568,"thread":"tokio-rt-worker","ts":"2026-04-27T05:06:08.672831Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\radha\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019dcd54-a092-7da3-be09-d011fc238cee","level":"debug","msg":"running dbt-fusion with argumets {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false}","name":"MainReportArgs","pid":31568,"thread":"tokio-rt-worker","ts":"2026-04-27T05:06:08.672888Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019dcd54-a092-7da3-be09-d011fc238cee","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":31568,"thread":"tokio-rt-worker","ts":"2026-04-27T05:06:08.682287Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019dcd54-a092-7da3-be09-d011fc238cee","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":31568,"thread":"tokio-rt-worker","ts":"2026-04-27T05:06:08.684380Z"}}
+{"data":{"completed_at":"2026-04-27T05:06:09.084194Z","elapsed":0.4136914908885956,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019dcd54-a092-7da3-be09-d011fc238cee","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [413ms]","name":"CommandCompleted","pid":31568,"thread":"tokio-rt-worker","ts":"2026-04-27T05:06:09.084798Z"}}
